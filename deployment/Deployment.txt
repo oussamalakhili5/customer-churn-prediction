@@ -1,0 +1,29 @@
+Customer Churn Prediction - Deployment Guide
+============================================
+
+Prerequisites:
+- Python 3.8 or higher
+- Git installed
+
+Installation Steps:
+1. Clone the repository
+   git clone https://github.com/VOTRE_USERNAME/customer-churn-prediction.git
+
+2. Navigate to project folder
+   cd customer-churn-prediction
+
+3. Install dependencies
+   pip install -r requirements.txt
+
+4. Run the Streamlit app
+   streamlit run app/streamlit_app.py
+
+5. Open browser at http://localhost:8501
+
+Model Files:
+- models/ada_boost_churn_model.pkl (AdaBoost with sample weighting)
+- models/best_xgboost_churn_model.pkl (XGBoost optimized)
+- models/best_optuna_churn_model.pkl (XGBoost with Optuna)
+
+Data:
+- data/raw/Customer-Churn.csv (Telco customer dataset)
